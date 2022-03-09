@@ -9,5 +9,12 @@ describe("Test suite for our iterator function", () => {
         };
 
         expect(iterator(1, 3)).toEqual(mockValue);
+
+        const mockValue2 = {
+            one: [3, 6, 9, 12],
+            two: [4, 8, 12, 16, 20, 24],
+            three: [5, 10, 15, 20, 25, 30, 35]
+        };
+        expect(iterator(3, 12)).toEqual(mockValue2);
     })
 })
