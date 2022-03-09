@@ -4,7 +4,7 @@
   "description": "“In a language of your choice, using all best practice principles you’re aware of, could you please provide code that iterates in multiples of A until X, then in multiples of A + 1 until 2X, then multiples of A + 2 until 3X. Please state any assumptions you’ve made.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -16,5 +16,8 @@
   "bugs": {
     "url": "https://github.com/Cleggatron/2iTechChallenge/issues"
   },
-  "homepage": "https://github.com/Cleggatron/2iTechChallenge#readme"
+  "homepage": "https://github.com/Cleggatron/2iTechChallenge#readme",
+  "devDependencies": {
+    "jest": "^27.5.1"
+  }
 }
