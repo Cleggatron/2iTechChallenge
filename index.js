@@ -26,6 +26,15 @@ function iterator(A, X){
         }
     }
 
+    const subArrays = Object.values(output);
+
+    subArrays.forEach(subArray => {
+        console.log("New Array:")
+        subArray.forEach(number => {
+            console.log(number)
+        })
+    })
+
     return output;
 }
 
