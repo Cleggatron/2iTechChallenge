@@ -8,6 +8,10 @@
 //then in multiples of 4 till 36
 
 function iterator(A, X){
+    if(isNaN(A) || isNaN(X)){
+        throw new Error("You have not provided valid arguements")
+    }
+
     const output = {
         one: [],
         two: [],
@@ -38,6 +42,7 @@ function iterator(A, X){
     return output;
 }
 
-iterator(2, 14)
+iterator(2, 14);
+iterator(3, 32);
 
 module.exports = iterator;
