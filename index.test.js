@@ -17,4 +17,11 @@ describe("Test suite for our iterator function", () => {
         };
         expect(iterator(3, 12)).toEqual(mockValue2);
     })
+
+    test("It should handle bad inputs", () => {
+        //no input
+        expect(() => iterator()).toThrow()
+        //bad input
+        expect(() => iterator("Bad Words", "Poor Input")).toThrow()
+    })
 })
