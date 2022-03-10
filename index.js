@@ -50,8 +50,9 @@ function iterator(A, X){
     return output;
 }
 
-//terator(2, 14);
-//iterator(3, 32);
+iterator(2, 14);
+iterator(3, 32);
 iterator(-1, -12);
+//iterator("Bad Input", "Should be numeric");
 
 module.exports = iterator;
