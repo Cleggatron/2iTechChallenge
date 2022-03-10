@@ -8,8 +8,15 @@
 //then in multiples of 4 till 36
 
 function iterator(A, X){
-    if(isNaN(A) || isNaN(X) || A <= 0 || X <= 0){
-        throw new Error("You must provide numeric positive values for both arguments")
+    
+    //throw for non numeric input
+    if(isNaN(A) || isNaN(X)){
+        throw new Error("You must provide numeric values for both arguments")
+    }
+
+    //stop an infinte recursion for sub zero outputs
+    if( A <= 0 || X <= 0){
+        return 0;
     }
 
     const output = {
@@ -43,8 +50,8 @@ function iterator(A, X){
     return output;
 }
 
-iterator(2, 14);
-iterator(3, 32);
+//terator(2, 14);
+//iterator(3, 32);
 iterator(-1, -12);
 
 module.exports = iterator;

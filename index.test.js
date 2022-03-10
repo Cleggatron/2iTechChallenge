@@ -23,5 +23,7 @@ describe("Test suite for our iterator function", () => {
         expect(() => iterator()).toThrow()
         //bad input
         expect(() => iterator("Bad Words", "Poor Input")).toThrow()
+
+        expect(iterator(-1, -20)).toEqual(0);
     })
 })
