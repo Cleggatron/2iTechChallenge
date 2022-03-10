@@ -10,11 +10,11 @@
 
   I've elected to iterate once through all the possible values, and store valid numbers for all three iterations of the conditions in an object, as they arise.
 
-  After this I am then taking the values for the objects, and iterating through each in turn logging out the value. 
+  After this I am then taking the values for the objects, and iterating through each in turn logging out the values. 
 
   By doing this I have been able to return the object containing the values, This in turn has enabled me to create a basic test suite using Jest. I was then able to develop this function using Test Driven Development and Red Green Refactoring.
 
-  By doing this I have added an addition loop iteration. Slightly increasing time complexity, however this is kept within a linear time complexity. Additionally I feel that this method allows for easier scaling, should we need to add further iterations, as we would only need to increase the object size, the limit on the first loop, and a section of code to push the values up. All of this is reasonably concise, compared to coding 3 seperate loops for the three iterations.
+  This has added an addition loop iteration, slightly increasing time complexity, however this is kept within a linear scale. Additionally I feel that this method allows for easier scaling, should I need to add further iterations, as I would only need to increase the object size, the limit on the first loop, and a section of code to push the values up. All of this is reasonably concise, compared to coding 3 seperate loops for the three iterations.
 
   I have built in an error thrower should we get non numeric input. Additionally it will return automatically with a value of 0 should we receive inputs for either parameter that are <= to 0. This will prevent an infinite recursion in the case of the A parameter being <= 0.
 
@@ -22,9 +22,9 @@
 
   ## Usage
 
-  Once you clone the repository you can run the index.js file from the clommand line in the root directory using the command `node index.js`. The function call featuring non numeric output is commeneted out at the moment, to better see the output of a sucessful run. Bit can be commented in to check that it throws the expected error.
+  Once you clone the repository you can run the index.js file from the clommand line in the root directory using the command `node index.js`. The function call featuring non numeric output is commented out at the moment, to better see the output of a sucessful run. That line can be uncommented to check that it throws the expected error.
 
-  If you wish to run the test suite you will need to run the command `npm i` to install Jest. These can then be run in the command line with the command `npm run test`.
+  If you wish to run the test suite you will need to run the command `npm i` to install Jest (assuming you have Node.js installed on your machine). These can then be run in the command line with the command `npm run test`.
 
  ## Contact
 
