@@ -1,6 +1,6 @@
 //this function will iterate in multiples of A until X
 //then in multiples of A+1 until 2X
-//then in multiples of A+3 until 3X
+//then in multiples of A+2 until 3X
 
 //for example if A = 2 and x = 12
 //iterate in multiples of 2 till 12
